@@ -1,0 +1,491 @@
+@import url(raleway.css);
+@import url(roboto.css);
+ body {
+	min-width: 350px;
+}
+.pixelFree{
+    height:  20px;
+}
+nav h2 {
+	font-family: Roboto, sans-serif;
+	color: #0149a1;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 0;
+	margin-left: 10px;
+}
+nav p{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+	color: #0149a1;
+	font-size: 10px;
+	font-weight: 700;
+	margin-top: -10px;
+}
+nav a {
+	font-family: Roboto, sans-serif;
+	font-size: 15px;
+}
+
+nav img {
+	margin-top: -10px;
+}
+nav .flag {
+	margin-top: 15px;
+	margin-left: 5px;
+}
+nav .flag img {
+	height: 20px;
+}
+nav .flag:hover {
+	transform: scale(1.1);
+	transition: all .3s ease-out;
+}
+header {
+	background-image: url(../img/bg.png);
+	text-align: center;
+}
+header .stone img {
+	margin: 20px;
+	width: 60%;
+	min-width: 300px;
+}
+header .sloganText {
+	font-family: Roboto, sans-serif;
+	color: #0149a1;
+	font-size: 35px;
+	font-weight: 600;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 400;
+	line-height: 48px;
+	text-shadow:-1px -1px 1px rgba(255,255,255,0.2), 1px 1px 1px rgba(255,255,255,0.2),1px 1px 1px rgba(0,0,0,0.7);
+}
+header .companyNameSmall {
+	font-family: Roboto, sans-serif;
+	color: #663399;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 48px;
+	text-align: center;
+	 text-shadow:-1px -1px 1px rgba(255,255,255,0.2), 1px 1px 1px rgba(255,255,255,0.2),1px 1px 1px rgba(0,0,0,0.7);
+}
+header .companyName {
+	margin-top: -10px;
+	font-family: Roboto, sans-serif;
+	color: #663399;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 48px;
+	text-align: center;
+	 text-shadow:-1px -1px 1px rgba(255,255,255,0.2), 1px 1px 1px rgba(255,255,255,0.2),1px 1px 1px rgba(0,0,0,0.7);
+}
+header .stone {
+	position: relative;
+}
+header .buybtn {
+	margin-top: 10%;
+	position: absolute;
+	margin-left: calc(50% - 100px);
+}
+header .buybtn .mailMargin img {
+	width: 30px;
+	height: 30px;
+}
+header .buybtn .mailMargin {
+	margin-left: -105px;
+	margin-top: -60px;	
+	position: absolute;
+}
+ .headButton {
+     display: flex;
+     flex-direction: column;
+     margin: 0 auto;
+     height: 220px;
+}
+ .headButtonPic {
+ 	 display: flex;
+     justify-content: center;
+     top: 10%;
+     min-width: 100px;
+     max-height: 100px;
+     min-width: 100px;
+     height: 97px;
+}
+.headButtonPic:hover {
+	transform: scale(1.1);
+	transition: all .3s ease-out;
+}
+
+ .headButtonName {
+ 	 margin-top: 15px;
+     font-family: "Roboto";
+     font-size: 17px;
+     font-weight: 600;
+     color:  #5d6981;
+     text-align: center;
+}
+}
+.downHeadText{
+	font-family: Roboto;
+    color:  #7c8ca0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+.redbtn {
+	background-color: #ff2d55;
+	width: 200px;
+	height: 50px;
+	border: none;
+	border-radius: 30px;
+	margin: 0 auto;
+    color: white;
+	font-size: 18px;
+	font-weight: 500;
+}
+.redbtn:hover{
+	transform: scale(1.1);
+	transition: all .3s ease-out;
+}
+.hello {
+	width: auto;
+	height: auto;
+	background-color: rgb(1, 72, 161);
+}
+.hello .text {
+	font-family: Roboto, sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.hello h2 {
+	font-family: Roboto, sans-serif;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: center;
+}
+.tech {
+	width: auto;
+	height: auto;
+	background-color: #ffffff;
+}
+.tech .text {
+	font-family: Roboto, sans-serif;
+	color: black;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.tech h2 {
+	font-family: Roboto, sans-serif;
+	color: #0149a1;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: center;
+}
+.tech h1 {
+	font-family: Roboto, sans-serif;
+	color: #7c8ca0;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 48px;
+	text-align: center;
+}
+.product {
+	background-color: rgb(237, 239, 241);
+}
+.product .text {
+	font-family: Roboto, sans-serif;
+	color: black;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.product h2 {
+	font-family: Roboto, sans-serif;
+	color: #0149a1;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: center;
+}
+.downText {
+	font-family: Roboto, sans-serif;
+	color: #7c8ca0;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 48px;
+	text-align: center;
+	margin-top: -20px;
+}
+.contacts .text {
+	font-family: Roboto, sans-serif;
+	color: black;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.contacts h2 {
+	font-family: Roboto, sans-serif;
+	color: #0149a1;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: center;
+}
+.down {
+	height: 100px;
+	width: auto;
+	background-color: rgb(1, 72, 161);
+}
+.down h2 {
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	color: white;
+}
+.copy {
+	margin-top: 10px;
+	float: left;
+	font-family: Roboto, sans-serif;
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+}
+@media (max-width: 450px){
+
+header .sloganText {
+	font-size: 25px;
+}
+header .companyNameSmall {
+	font-size: 14px;
+}
+header .companyName {
+	font-size: 18px;
+	margin-top: -30px;
+}
+}
+
+/*.text{
+	visibility: hidden;
+}*/
+.text.scale-in-left {
+	visibility: visible;
+}
+
+
+
+.bounce-top {
+	-webkit-animation: bounce-top 1s both;
+	        animation: bounce-top 1s both;
+}
+
+
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
+
+.scale-in-left {
+	-webkit-animation: scale-in-left 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-left 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes scale-in-left {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-left {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    opacity: 1;
+  }
+}
+
+
+
+
+.text{
+  visibility: hidden;
+}
+
+.text.scale-in-right {
+  visibility: visible;
+}
+
+.scale-in-right {
+  -webkit-animation: scale-in-right 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: scale-in-right 1.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-2-4 16:52:40
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-in-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-right {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-right {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    opacity: 1;
+  }
+}
