@@ -1,0 +1,138 @@
+.contacts {
+  background: url("../img/map.jpg") 65% 150px $black no-repeat;
+  background-size: cover;
+}
+
+.contacts__wrap {
+  padding-top: 100px;
+  padding-bottom: 170%;
+}
+
+.contacts__title {
+  font-size: px-to-rem(32px);
+  line-height: px-to-rem(37px);
+  text-align: center;
+  color: $primary;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+
+.contacts__info {
+  background-color: $white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.contacts__phone, .contacts__mail, .contacts__address {
+  margin: 0 0 20px 0;
+
+  span {
+    display: block;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(16px);
+    font-weight: 700;
+    padding-left: 30px;
+    background: url("../img/tel.svg") left center no-repeat;
+  }
+
+  a {
+    text-decoration: none;
+    color: $black;
+    font-size: px-to-rem(17px);
+    line-height: px-to-rem(24px);
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+    transition-duration: 500ms;
+    transition-property: color;
+
+    &:hover {
+      color: $primary;
+    }
+
+  }
+
+}
+
+.contacts__mail {
+  
+  span {
+    background-image: url("../img/mail.svg");
+  }
+  
+}
+
+.contacts__address {
+
+  span {
+    background-image: url("../img/map.svg");
+    line-height: px-to-rem(24px);
+
+    &:last-child {
+      background: none;
+      font-size: px-to-rem(17px);
+      line-height: px-to-rem(24px);
+      font-weight: 400;
+      margin-top: 10px;
+    }
+
+  }
+
+}
+
+.contacts__shema {
+  font-size: px-to-rem(17px);
+  line-height: px-to-rem(24px);
+  margin-bottom: 0;
+  margin-left: 30px;
+
+  span {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary;
+  }
+
+}
+
+@media (min-width: 560px) {
+
+  .contacts__wrap {
+    padding-bottom: 100%;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .contacts {
+    background-position: 75% 150px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .contacts {
+    background-position: center top;
+  }
+
+  .contacts__info {
+    max-width: 358px;
+    margin-top: 30px;
+  }
+
+  .contacts__wrap {
+    padding-bottom: 10px;
+  }
+
+  .contacts__title {
+    max-width: 455px;
+    text-align: left;
+    margin: 20px 0;
+  }
+
+}

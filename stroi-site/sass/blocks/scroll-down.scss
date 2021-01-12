@@ -1,0 +1,40 @@
+.scroll-down {
+  display: none;
+}
+
+.fp-viewing-lastPage {
+
+  .scroll-down {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .scroll-down {
+    position: fixed;
+    display: block;
+    right: 0;
+    top: calc(50% + 175px);
+    transform: translateY(-50%);
+    background-color: $white;
+    z-index: 100;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 25px 8px 55px;
+    cursor: pointer;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 100% 100%, 0 85%);
+
+    span {
+      font-size: px-to-rem(12px);
+      line-height: px-to-rem(14px);
+      display: block;
+      text-align: left;
+      transform: rotate(-90deg);
+      margin-top: 25px;
+    }
+
+  }
+
+}

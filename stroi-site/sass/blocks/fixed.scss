@@ -1,0 +1,162 @@
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: $white;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, .8);
+  width: 100%;
+}
+
+.fixed__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.fixed__hamburger {
+  flex-basis: 24px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-right: 11.3%;
+  
+  span {
+    display: block;
+    background-color: $primary;
+    height: 2px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 4px;
+
+    &:nth-child(3) {
+      margin-bottom: 0;
+      width: 75%;
+      margin-left: auto;
+    }
+
+  }
+  
+}
+
+.fixed__repair, .fixed__map {
+  background: url("../img/repair.svg") left center no-repeat;
+  padding: 24px 0 24px 48px;
+
+  p {
+    margin: 0;
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(21px);
+  }
+
+  span {
+    display: block;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(16px);
+  }
+
+}
+
+.fixed__phone {
+  margin-left: auto;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $white;
+  }
+
+  img {
+    display: block;
+  }
+
+  span {
+    display: none;
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(28px);
+  }
+
+}
+
+.fixed__map {
+  background-image: url("../img/map.png");
+  display: none;
+}
+
+.fixed__btn {
+  @include btn {
+    display: none;
+    margin-left: 24px;
+    max-width: 164px;
+  }
+}
+
+.fixed__callback {
+  display: none;
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(16px);
+  margin-left: 24px;
+}
+
+@media (min-width: 480px) {
+
+  .fixed__hamburger {
+    margin-right: 5%;
+  }
+
+  .fixed__repair {
+    margin-right: 7%;
+  }
+
+  .fixed__map {
+    display: block;
+  }
+
+}
+
+@media (min-width: 680px) {
+
+  .fixed__phone {
+
+    img {
+      display: none;
+    }
+
+    span {
+      display: block;
+    }
+
+  }
+
+}
+
+@media (min-width: 880px) {
+
+  .fixed__btn {
+    display: block;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .fixed__callback {
+    display: block;
+  }
+
+  .fixed__hamburger {
+    position: relative;
+
+    &::after {
+      content: "Меню";
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(16px);
+      position: absolute;
+      right: -45px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+  }
+
+}

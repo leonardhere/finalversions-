@@ -1,0 +1,77 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin adaptive-video() {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+
+@function px-to-rem($size, $basicSize: 16px) {
+  @return $size / $basicSize#{rem};
+}
+
+@mixin dynamicText($minSizePercent, $maxSize, $minSize, $minWidthPx, $maxWidth, $minWidth) {
+  font-size: calc(#{$minSizePercent} + (#{$maxSize} - #{$minSize}) * (100vw - #{$minWidthPx}) / (#{$maxWidth} - #{$minWidth}));
+}
+
+@mixin btn() {
+  width: 100%;
+  background-color: $primary;
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(16px);
+  text-align: center;
+  color: #2F2F2F;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  @content;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+
+}

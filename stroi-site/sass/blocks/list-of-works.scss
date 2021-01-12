@@ -1,0 +1,126 @@
+.list-of-works {
+  background: url("../img/list-of-works-bg.jpg") center top $black;
+  background-size: cover;
+  position: relative;
+  color: $white;
+  z-index: 1;
+
+  &::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(255, 255, 255, 0) 48.62%, rgba(0, 0, 0, 0.6) 100%), rgba(24, 24, 24, 0.9);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+}
+
+.list-of-works__wrap {
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+.list-of-works__title {
+  font-size: px-to-rem(32px);
+  line-height: px-to-rem(37px);
+  color: $primary;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 24px 0;
+}
+
+.list-of-works__block {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+}
+
+.list-of-works__item {
+  border: 1px solid #2F2F2F;
+  border-radius: 5px;
+  margin-bottom: 24px;
+  padding: 0 24px;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    width: 37px;
+    height: 2px;
+    background-color: $primary;
+    display: block;
+  }
+
+  p {
+    font-size: px-to-rem(17px);
+    line-height: px-to-rem(24px);
+    margin: 20px 0;
+
+    &:first-child {
+      font-size: px-to-rem(18px);
+      line-height: px-to-rem(21px);
+    }
+
+  }
+
+}
+
+@media (min-width: 580px) {
+
+  .list-of-works__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .list-of-works__item {
+    margin-bottom: 0;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .list-of-works__block {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .list-of-works__block {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .list-of-works__title {
+    text-align: left;
+  }
+
+  .list-of-works__item {
+
+    p {
+      font-size: px-to-rem(14px);
+      line-height: px-to-rem(22px);
+
+      &:first-child {
+        font-size: px-to-rem(16px);
+        line-height: px-to-rem(19px);
+      }
+
+    }
+
+  }
+
+}
