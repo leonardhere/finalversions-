@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="container">
+      <header class="header">
+        <div class="header__up-mobile">
+          <div class="header__logo">
+            <img src="img/logo.png" alt="logo">
+            <p>океан <br> подарков</p>
+          </div>
+          <div class="header__phone">
+            <a href="tel:+74956425651">+7 495-642-56-51</a>
+          </div>
+        </div>
+        <nav class="header__up">
+          <ul class="header__up-links">
+            <li class="header__up-link">О компании</li>
+            <li class="header__up-link">Доставка</li>
+            <li class="header__up-link">Сотрудничество</li>
+            <li class="header__up-link">Контакты</li>
+          </ul>
+          <div class="header__up-messengers">
+            <img src="img/viber.png" alt="viber">
+            <img src="img/whatsapp.png" alt="whatsapp">
+            <a href="tel:+79261890355">
+              +7 926-189-03-55
+              <span>
+                (Пн-Вс: 08:00-23:00) 
+              </span>
+            </a>
+          </div>
+          <div class="header__phone">
+            <a href="tel:+74956425651">+7 495-642-56-51</a>
+          </div>
+        </nav>
+        <div class="header__down">
+          <div class="header__logo">
+            <img src="img/logo.png" alt="logo">
+            <p>океан <br> подарков</p>
+          </div>
+          <a class="header__shoplist">
+            <img src="img/list.png" alt="">
+            <div class="header__shoplist-title">Каталог товаров</div>
+          </a>
+          <div class="header__search">
+            <input type="text" placeholder="Искать">
+            <div class="header__search-icon">
+            <img src="img/search.png" alt="search">
+          </div>
+          </div>
+          <ul class="header__down-icons">
+            <li class="header__down-icon">
+              <a href="#">
+                <object type="image/svg+xml" data="img/lk.svg" class="icon">
+                  <img src="img/lk.png" alt="Ваш браузер не поддерживает svg">
+                </object>
+              </a>
+            </li>
+            <li class="header__down-icon">
+              <a href="#">
+                <object type="image/svg+xml" data="img/compare.svg" class="icon">
+                  <img src="img/compare.png" alt="Ваш браузер не поддерживает svg">
+                </object>
+              </a>
+            </li>
+            <li class="header__down-icon">
+              <a href="#">
+                <object type="image/svg+xml" data="img/like.svg" class="icon">
+                  <img src="img/like.png" alt="Ваш браузер не поддерживает svg">
+                </object>
+              </a>
+            </li>
+            <li class="header__down-icon">
+              <a href="#">
+                <object type="image/svg+xml" data="img/cart.svg" class="icon" style="margin-top: -13px;">
+                  <img src="img/cart.png.png" alt="Ваш браузер не поддерживает svg">
+                </object>
+              </a>
+            </li>
+          </ul>
+          <div class="overlay">
+            <nav class="overlayMenu">  
+                <ul role="menu">
+                    <li><a href="#" role="menuitem">Новинки</a></li>
+                    <li><a href="#" role="menuitem">Любимым</a></li>
+                    <li><a href="#" role="menuitem">Морская романтика</a></li>
+                    <li><a href="#" role="menuitem">Праздники</a></li>
+                    <li><a href="#" role="menuitem">На свадьбу</a></li>
+                    <li><a href="#" role="menuitem">Профессии</a></li>
+                    <li><a href="#" role="menuitem">Хобби и увлечения</a></li>
+                    <li><a href="#" role="menuitem">Знаки зодиака</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="navBurger" role="navigation" id="navToggle"></div> 
+        </div>
+        <div class="header__catalog">
+          <ul class="header__catalog-links">
+            <li class="header__catalog-link">
+              <a href="#">Новинки</a>
+            </li>
+            <li class="header__catalog-link">
+              <a href="#">Любимым</a>
+              <ul class="submenu">
+                <li><a href="#">Подарок любимому</a></li>
+                <li><a href="#">Подарок любимой</a></li>
+              </ul>
+            </li>
+            <li class="header__catalog-link">
+              <a href="#">Морская романтика</a>
+            </li>
+            <li class="header__catalog-link">
+              <a href="#">Праздники</a>
+            </li>
+            <li class="header__catalog-link">
+              <a href="#">На свадьбу</a>
+            </li>
+            <li class="header__catalog-link">
+              <a href="#">Профессии</a>
+            </li>
+            <li class="header__catalog-link">
+              <a href="#">Хобби и увлечения</a>
+            </li>
+            <li class="header__catalog-link">
+              <a href="#">Знаки зодиака</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <ul class="breadcrumb">
+        <li>Главная</li>
+        <li>Сравнение товаров</li>
+      </ul>
+      <div class="compare">
+        <h1 class="compare__title">Сравнение товаров</h1>
+        <div class="compare__clear">
+          <img class="compare__clear-cross" src="img/drop.png" alt="">
+          <a class="compare__clear-text" id="clearslider">Очистить сравнение</a>
+        </div>
+        <div class="compare__container">
+          <div class="compare__left">
+            <div class="compare__left-change">
+              <div class="parametrs">
+                <input type="radio">
+                <p>Все параметры</p>
+              </div>
+              <div class="differents">
+                <input type="radio">
+                <p>Только отличающиеся</p>
+              </div>
+            </div>
+            <ul class="compare__left-list">
+              <li class="compare__left-list__item">Артикул</li>
+              <li class="compare__left-list__item">Размер</li>
+              <li class="compare__left-list__item">Артикул</li>
+              <li class="compare__left-list__item">Материал</li>
+            </ul>
+          </div>
+          <div class="compare__right">
+            <div class="compare__slider">
+              <div class="compare__slider-item">
+                <div class="item-content">
+                  <img src="img/sailor.png" alt="">
+                  <div class="item-content__title">Штоф «Моряк ВМФ»</div>
+                  <div class="item-content__price">3 600 руб.</div>
+                  <div class="articool">B18</div>
+                  <div class="item-content__size">34см*36см*7см	</div>
+                  <div class="item-content__articooltwo">170х245 мм	
+                    34см*36см*7см	</div>
+                    <div class="item__content-material">Материал трубы: латунь, красное дерево Материал шкатулки: красное дерево</div>
+                </div>
+                <div class="addtocart js-remove-slide">
+                  <img src="img/bucket.png" class="deletethiselement" data-del="delete" alt="">
+                </div>
+              </div>
+              <div class="compare__slider-item">
+                <div class="item-content">
+                  <img src="img/dogs.png" alt="">
+                  <div class="item-content__title">Садовый фонтан «Щенки»</div>
+                  <div class="item-content__price">11 200 руб.</div>
+                  <div class="articool">BG5510M</div>
+                  <div class="item-content__size">170х245 мм		</div>
+                  <div class="item-content__articooltwo">-</div>
+                    <div class="item__content-material">-</div>
+                </div>
+                <div class="addtocart js-remove-slide">
+                  <img src="img/bucket.png" class="deletethiselement" data-del="delete" alt="">
+                </div>
+              </div>
+              <div class="compare__slider-item">
+                <div class="item-content">
+                  <img src="img/jews.png" alt="">
+                  <div class="item-content__title">Книга в кожаном переплете
+                    «Иудейские праздники» BG1394F</div>
+                  <div class="item-content__price">21 800 руб. <span>26 800 руб.</span></div>
+                  <div class="articool">BG1394F</div>
+                  <div class="item-content__size">205х265 мм	</div>
+                  <div class="item-content__articooltwo">205х265 мм</div>
+                    <div class="item__content-material">-</div>
+                </div>
+                <div class="addtocart js-remove-slide">
+                  <img src="img/bucket.png"class="deletethiselement" data-del="delete"  alt="">
+                </div>
+              </div>
+              <div class="compare__slider-item">
+                <div class="item-content">
+                  <img src="img/sailor.png" alt="">
+                  <div class="item-content__title">Штоф «Моряк ВМФ»</div>
+                  <div class="item-content__price">3 600 руб.</div>
+                  <div class="articool">B18</div>
+                  <div class="item-content__size">34см*36см*7см	</div>
+                  <div class="item-content__articooltwo">170х245 мм	
+                    34см*36см*7см	</div>
+                    <div class="item__content-material">Материал трубы: латунь, красное дерево Материал шкатулки: красное дерево</div>
+                </div>
+                <div class="addtocart js-remove-slide">
+                  <img src="img/bucket.png" data-del="delete" alt="">
+                </div>
+              </div>
+              <div class="compare__slider-item">
+                <div class="item-content">
+                  <img src="img/dogs.png" alt="">
+                  <div class="item-content__title">Садовый фонтан «Щенки»</div>
+                  <div class="item-content__price">11 200 руб.</div>
+                  <div class="articool">BG5510M</div>
+                  <div class="item-content__size">170х245 мм		</div>
+                  <div class="item-content__articooltwo">-</div>
+                    <div class="item__content-material">-</div>
+                </div>
+                <div class="addtocart js-remove-slide">
+                  <img src="img/bucket.png" data-del="delete" class="deletethiselement" alt="">
+                </div>
+              </div>
+              <div class="compare__slider-item">
+                <div class="item-content">
+                  <img src="img/jews.png" alt="">
+                  <div class="item-content__title">Книга в кожаном переплете
+                    «Иудейские праздники» BG1394F</div>
+                  <div class="item-content__price">21 800 руб. <span>26 800 руб.</span></div>
+                  <div class="articool">BG1394F</div>
+                  <div class="item-content__size">205х265 мм	</div>
+                  <div class="item-content__articooltwo">205х265 мм</div>
+                    <div class="item__content-material">-</div>
+                </div>
+                <div class="addtocart js-remove-slide">
+                  <img src="img/bucket.png" data-del="delete" class="deletethiselement" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer class="footer">
+        <div class="footer__column first-column">
+          <div class="footer__logo">
+            <img src="img/logo.png" alt="logo">
+            <p>океан <br> подарков</p>
+          </div>
+          <p class="footer__copyright">© 2019 Интернет-магазин 
+            «Океан подарков». 
+            Все права защищены.</p>
+            <a href="#">Карта сайта</a>
+        </div>
+        <div class="footer__column second-column">
+          <div class="footer__column-title">Меню</div>
+          <a href="#">О компании</a>
+          <a href="#">Доставка</a>
+          <a href="#">Сотрудничество</a>
+          <a href="#">Контакты</a>
+        </div>
+        <div class="footer__column third-column">
+          <div class="footer__column-title">Каталог</div>
+          <a href="#">Новинки</a>
+          <a href="#">Любимым</a>
+          <a href="#">Праздники</a>
+          <a href="#">На свадьбу</a>
+        </div>
+        <div class="footer__column four-column">
+          <a href="#">Профессии</a>
+          <a href="#">Хобби и увлечения</a>
+          <a href="#">Морская романтика</a>
+          <a href="#">Знаки зодиака</a>
+        </div>
+        <div class="footer__column contacts five-column">
+          <a href="tel:+74956425651">+7 495-642-56-51</a>
+          <div class="footer__contacts">
+            <div class="footer__contacts-social">
+              <img src="img/viber.png" alt="viber">
+              <img src="img/whatsapp.png" alt="whatsapp">
+            </div>
+            <a href="tel:+79261890355">
+              +7 926-189-03-55 <br> (Пн-Вс: 08:00-23:00) 
+            </a>
+
+          </div>
+          <p class="footer__address">г. Москва, Рязанский пр., д. 22, к. 2</p>
+          <p class="footer__email">info@giftsocean.ru</p>
+          <div class="footer__develop">
+            <img src="img/siart.png" alt="">
+            <p>Разработка сайта</p>
+          </div>
+        </div>
+        <div class="footer__mobile">
+          <div class="footer__mobile-ocean">
+            <div class="footer__logo">
+              <img src="img/logo.png" alt="logo">
+              <p>океан <br> подарков</p>
+            </div>
+            <div class="footer__contacts-social">
+              <img src="img/viber.png" alt="viber">
+              <img src="img/whatsapp.png" alt="whatsapp">
+              <div class="footer__mobile-numbers">
+                <a class="footer__mobile-phone" href="tel:+79261890355">
+                  +7 495-642-56-51
+                </a>
+                <a class="footer__mobile-phone" href="tel:+79261890355">
+                  +7 926-189-03-55
+                </a>
+              </div>
+            </div>
+            </div>
+            <p class="footer__address">г. Москва, Рязанский пр., д. 22, к. 2</p>
+            <p class="footer__email">info@giftsocean.ru</p>
+            <div class="footer__mobile-links">
+              <a href="#">Карта сайта</a>
+              <a href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer__develop">
+              <img src="img/siart.png" alt="">
+              <p>Разработка сайта</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
