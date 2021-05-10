@@ -1,0 +1,525 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+// beginning of header
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 30px;
+    right: 0;
+    z-index: 10;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 30px;
+        text-transform: uppercase;
+        line-height: 17px;
+        font-size: 15px;
+        @extend %ubuntu-medium;
+    }
+    &__btn{
+        color: #fff;
+        background-color: transparent;
+        padding: 6px 28px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        margin-right: 8px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            color: #000;
+            background-color: #fff;
+        }
+    }
+    &__phone{
+        font-size: 16px;
+        line-height: 18px;
+        @extend %ubuntu-bold;
+    }
+}
+.menu {
+    &__list-item{
+        display: inline-block;
+        & + .menu__list-item{
+            padding-left: 20px;
+        }
+    }
+    &__list-phone{
+        display: none;
+    }
+    &__btn{
+        display: none;
+    }
+}
+
+// end of header
+// beginning of top
+
+.top {
+    background-image: url(../images/top-bg.jpg);
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(45.97% 54.43% at 50% 45.57%, rgba(23, 26, 28, 0) 50.28%, rgba(23, 26, 28, 0.00225974) 50.29%, rgba(4, 5, 5, 0.820343) 58.72%, rgba(5, 5, 6, 0.792703) 80.08%, #000000 87.89%);
+        opacity: 0.4;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: flex-end;
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+    &__title{
+        font-size: 96px;
+        line-height: 115px;
+        @extend %sf-Semibold;
+        margin-bottom: 25px;
+    }
+    &__text{
+        margin: 25px 0 35px;
+        max-width: 325px;
+    }
+    &__social-item{
+        display: inline-block;
+        margin: 0 25px;
+    }
+    &__social-link{
+        opacity: 0.5;
+        transition: all .3s;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+// end of top
+// beginning of products
+
+.products {
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+    }
+    &__text{
+        max-width: 450px;
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    &__slider-box{
+        position: relative;
+        padding-top: 110px;
+    }
+    &__slider-text{
+        width: 281px;
+        font-size: 24px;
+        line-height: 28px;
+        position: absolute;
+        text-align: right;
+        @extend %ubuntu-medium;
+        bottom: 30px;
+        left: -245px;
+        z-index: 5;
+    }
+    &__slider{
+        max-width: 560px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 562px;
+            height: 276px;
+            border: 4px solid #fff;
+            top: -15px;
+            right: -17px;
+        }
+    }
+}
+.slider-btn{
+    padding: 16px 26px;
+    border: none;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 6;
+    bottom: -48px;
+    outline: none;
+    svg{
+        stroke: #fff;
+    }
+    &__left{
+        right: 60px;
+    }
+    &.slick-disabled{
+        background-color: #fff;
+        svg{
+            stroke: #000;
+        }
+    }
+}
+
+// end of products
+// beginning of benefits
+
+.benefits {
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 25px; 
+    }
+    &__item{
+        margin-bottom: 100px;
+        display: flex;
+        align-items: flex-end;
+        &:nth-child(even){
+            margin-left: 40px;
+            transform: translateY(25px)
+        }
+        &:nth-child(3){
+            margin-left: 30px;
+        }
+        &:nth-child(4){
+            margin-left: 60px;
+        }
+        &:first-child,
+        &:nth-child(2),
+        &:nth-child(3){
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+        }
+        &:first-child{
+            &::before{
+                height: 48px;
+                width: 245px;
+                background-image: url(../images/line-1.svg);
+                right: -60px;
+                top: 60px;
+            }
+        }
+        &:nth-child(2){
+            &::before{
+                height: 63px;
+                width: 463px;
+                background-image: url(../images/line-2.svg);
+                right: 530px;
+                top: 183px;
+            }
+        }
+        &:nth-child(3){
+            &::before{
+                height: 43px;
+                width: 254px;
+                background-image: url(../images/line-3.svg);
+                right: -54px;
+                top: 77px;
+            }
+        }
+    }
+    &__num{
+        font-size: 36px;
+        line-height: 41px;
+        @extend %ubuntu-bold;
+        margin-right: 10px;
+    }
+    &__img{
+        position: relative;
+        margin-right: 32px;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 193px;
+            height: 128px;
+            border: 2px solid #fff;
+            right: -12px;
+            top: -12px;
+            z-index: -1;
+        }
+    }
+    &__info{
+        width: 300px;
+    }
+    &__info-title{
+        width: 123px;
+        font-size: 21px;
+        line-height: 24px;
+        @extend %ubuntu-bold;
+        margin-bottom: 10px;
+    }
+    &__info-text{
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+// end of benefits
+// beginning of specification
+
+.specification {
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 25px;
+    }
+    &__item-center{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    &__box{
+        width: 280px;
+        position: relative;
+        margin-top: 10px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: contain;
+        }
+    }
+    &__box-2{
+        margin-top: 140px;
+    }
+    &__box-4{
+        margin-top: 160px;
+    }
+    &__box-1::before{
+        background-image: url(../images/pointer-1.svg);
+        width: 229px;
+        height: 130px;
+        right: -185px;
+        top: 18px;
+    }
+    &__box-2::before{
+        background-image: url(../images/pointer-2.svg);
+        width: 346px;
+        height: 81px;
+        right: -322px;
+        bottom: 95px;
+    }
+    &__box-3::before{
+        background-image: url(../images/pointer-3.svg);
+        width: 258px;
+        height: 103px;
+        left: -285px;
+        top: 18px;
+    }
+    &__box-4::before{
+        background-image: url(../images/pointer-4.svg);
+        width: 124px;
+        height: 89px;
+        left: -132px;
+        bottom: 111px;
+    }
+
+    &__box-title{
+        font-size: 21px;
+        line-height: 28px;
+        @extend %ubuntu-bold;
+        margin-bottom: 10px;
+    }
+    &__box-text{
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 19px;
+    }
+}
+
+// end of specification
+// beginning of questions
+
+.questions {
+    &__items{
+        max-width: 757px;
+        padding-bottom: 15px;
+    }
+    &__item{
+        max-width: 690px;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: relative;
+        &:nth-child(3)::before{
+            content: '';
+            position: absolute;
+            background-image: url(../images/questions-bg.png);
+            width: 319px;
+            height: 125px;
+            top: -33px;
+            right: -392px;
+        }
+    }
+    &__item-title{
+        font-size: 21px;
+        line-height: 28px;
+        @extend %ubuntu-medium;
+        color: rgba(#fff, .8);
+        padding: 20px 10px 20px 40px;
+        position: relative;
+        margin-bottom: 4px;
+        cursor: pointer;
+        &::after{
+            content: url('../images/vector.svg');
+            position: absolute;
+            right: -72px;
+            top: 0;
+            width: 72px;
+            height: 67px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__item-text{
+        padding: 0px 5px 75px 50px;
+        font-size: 15px;
+        line-height: 22px;
+        margin: 0 0 4px;
+        display: none;
+    }
+    &__item.questions__item-active{
+        .questions__item-title::after{
+            transform: rotate(180deg);
+        }
+        .questions__item-text{
+            display: block;
+        }
+        display: block;
+    }
+}
+
+// end of questions
+// beginning of contacts
+
+.contacts {
+    &__inner{
+        display: flex;
+        padding-left: 25px;
+    }
+    &__info{
+        width: 240px;
+        margin-right: 60px;
+    }
+    &__info-box{
+        margin-bottom: 30px;
+    }
+    &__info-title,
+    &__form-title{
+        margin: 0 0 13px;
+        font-size: 21px;
+        line-height: 24px;
+        @extend %ubuntu-bold
+    }
+    &__info-phone,
+    &__info-email,
+    &__form-text{
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 19px;
+    }
+    &__info-email:hover{
+        text-decoration: underline;
+    }
+    &__form{
+        width: 570px;
+        margin-right: 106px;
+    }
+    &__form-text{
+        margin: 0 0 12px;
+    }
+    &__form-line{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    &__form-input,
+    &__form-textarea{
+        border: none;
+        @extend %ubuntu-regular;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 15px;
+        font-size: 13px;
+        line-height: 15px;
+        &::placeholder{
+            color: rgba(#fff, .4);
+        }
+    }
+    &__form-input{
+        width: 49%;
+    }
+    &__form-textarea{
+        min-height: 144px;
+        width: 100%;
+        resize: none;
+        margin-bottom: 20px;
+    }
+    &__form-btn{
+        color: #fff;
+        background-color: transparent;
+        padding: 9px 15px;
+        border: 1px solid #fff;
+        border-radius: 2px;
+        @extend %ubuntu-bold;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            color: #000;
+            background-color: #fff;
+        }
+    }
+    &__social-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__social-item{
+        margin: 14px 0;
+    }
+}
+
+// end of contacts
+// beginning of footer
+
+.footer {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    &__copy{
+        text-align: right;
+        font-size: 13px;
+        line-height: 17px;
+        color: rgba(#fff, .64);
+    }
+}
+
+// end of footer
+
+
+
+
+@import "media";
