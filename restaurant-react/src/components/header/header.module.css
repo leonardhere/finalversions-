@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid silver;
+  width: 100%;
+  height: 70px;
+  z-index: 50;
+}
+
+.logo {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  margin-left: 10px;
+  font-family: 'Architects Daughter', cursive;
+  flex: 1;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 65px;
+}
+
+.menu {
+  flex: 1;
+}
+
+ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+ul li {
+  margin: 0 20px;
+}
+
+ul li:hover {
+  color: silver;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.checkout i {
+  color: black;
+  font-size: 1rem;
+}
+
+.active {
+  text-decoration: underline black;
+  font-weight: bold;
+}

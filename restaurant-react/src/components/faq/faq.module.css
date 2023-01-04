@@ -1,0 +1,19 @@
+.faq {
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+h2 {
+  font-family: 'Architects Daughter', cursive;
+}
+
+.faq ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq ol li {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,47 @@
+/* Containing divs for the menu icon */
+.outer-ham {
+  width: fit-content;
+  padding: 10px 10px;
+  margin: 20px;
+  padding: 5px;
+  /* border: 1px solid red; */
+}
+.inner-ham {
+  cursor: pointer;
+  /* border: 1px solid red; */
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  z-index: 99999;
+}
+/* all 3 hams are this */
+.menu {
+  height: 1.5px;
+  background: white;
+  width: 40px;
+  margin: 10px 5px;
+  transition: 0.5s all ease-in-out;
+  /* border: 1px solid red; */
+}
+/* managing position after click */
+.rot-up {
+  transform: rotate(-45deg) translate(40%);
+}
+.rot-down {
+  transform: rotate(45deg) translate(40%);
+}
+.slide {
+  transform: translateX(-200px);
+  background: transparent;
+}
+/* managing movement of sidebar after click */
+#sidebar-control {
+  /* background: black; */
+  position: absolute;
+  top: 0%;
+  left: -400px;
+  transition: 0.8s all ease-in-out;
+}
+.sidebar-slide {
+  transform: translateX(800px);
+}

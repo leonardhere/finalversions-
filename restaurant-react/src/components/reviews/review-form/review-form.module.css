@@ -1,0 +1,52 @@
+.reviewForm {
+  margin: 50px;
+  color: black;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px silver;
+  border-radius: 10px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form > * {
+  margin-bottom: 10px;
+}
+
+input {
+  height: 30px;
+  width: 300px;
+  border: none;
+}
+
+textarea {
+  height: 100px;
+  width: 300px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: rgb(78, 78, 78);
+}
+
+button:active {
+  transform: scale(0.95);
+}

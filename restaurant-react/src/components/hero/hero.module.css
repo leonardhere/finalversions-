@@ -1,0 +1,19 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Architects Daughter', cursive;
+  height: 500px;
+  width: 100%;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-bottom: 1px solid silver;
+  background-position: center;
+  background-image: url('https://images.unsplash.com/photo-1515669097368-22e68427d265?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+}
+
+.hero h1 {
+  font-size: 5rem;
+}

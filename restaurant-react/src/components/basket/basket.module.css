@@ -1,0 +1,15 @@
+.basket {
+  margin: 50px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 2px silver;
+  border-radius: 5px;
+}
+
+.basket i {
+  font-size: 2rem;
+}
+
+.basket button:disabled {
+  background-color: silver;
+}

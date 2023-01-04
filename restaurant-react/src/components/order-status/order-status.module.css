@@ -1,0 +1,9 @@
+.order {
+  background-color: white;
+  padding: 1rem;
+  margin: 10px;
+  box-shadow: 2px 2px 2px silver;
+  display: flex;
+  flex-direction: column;
+  font-size: 5rem;
+}

@@ -1,0 +1,114 @@
+* {
+  font-family: 'poppins';
+  font-weight: 900;
+}
+.chat-container {
+  position: fixed;
+  height: 700px;
+  width: 600px;
+  background-color: inherit;
+  position: relative;
+  top: 1%;
+  left: 22%;
+  /* border: 2px solid white; */
+}
+.chat-header {
+  font-size: 20px;
+  padding: 10px;
+  background: #053ca1;
+  color: #fff;
+  height: 43px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.chat-header img:hover {
+  cursor: pointer;
+}
+.chat-messages {
+  height: 100%;
+  margin-top: 20px;
+
+  background: inherit;
+  overflow: auto;
+  /* border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5; */
+  display: flex;
+  flex-direction: column;
+}
+.chat-messages .chat-bubble {
+  background: inherit;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  position: relative;
+  color: rgb(19, 18, 18);
+  font-size: 20px;
+}
+.chat-messages .other-chat:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #e5e5e5;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -1px;
+  margin-left: -10px;
+}
+.chat-messages .self-chat {
+  background: linear-gradient(90deg, #4481a7, #7d82cf);
+}
+.chat-messages .self-chat:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left-color: transparent;
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: -1px;
+  margin-right: -10px;
+}
+.chat-footer {
+  height: 43px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: inherit;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  /* background-color: #e5e5e5; */
+}
+.chat-footer button {
+  background: #4081a7;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  position: relative;
+  top: -10px;
+  height: 99%;
+  border-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+button:focus {
+  outline: none !important;
+}
+.chat-footer button:hover {
+  cursor: pointer;
+  border: transparent !important;
+  outline: none !important;
+}
+
+/* //this is storage */

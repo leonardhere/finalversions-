@@ -1,0 +1,21 @@
+.loader {
+  width: 30px;
+  height: 30px;
+  margin: 20px;
+  margin-left: 50%;
+  background-color: blue;
+  transition: 0.5s ease linear;
+  animation: toggle 1s linear infinite;
+}
+
+@keyframes toggle {
+  from {
+    background-color: blue;
+    transform: scale(1) translateX(-50%);
+  }
+  to {
+    background-color: red;
+    transform: scale(1.2) translateX(-50%) rotate(360deg);
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,916 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karantina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Indie+Flower&family=Karantina&family=Source+Code+Pro:ital,wght@0,200;1,200&display=swap");
+:root {
+  --navColor: #1e1e30;
+  --backColor: #161625;
+  --fontColor1: white;
+  --fontFam1: "Poppins", sans-serif;
+}
+body {
+  cursor: cell;
+  background-color: #002a4a;
+  padding: 0%;
+  margin: 0%;
+  /* border: 1px solid red; */
+  /* background: linear-gradient(180deg, #002A4A, #02121F); */
+  /* background-size: cover; */
+  /* height: 120vh; */
+}
+
+.Sidebar {
+  background-color: var(--navColor) !important;
+  height: 100vh;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  width: 6%;
+}
+.Title {
+  color: white;
+  position: absolute;
+  top: 7%;
+  left: 30%;
+  font-size: 30px;
+}
+.Links {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 31%;
+}
+.Element {
+  margin-bottom: 50px;
+  color: rgb(128, 128, 128);
+  font-size: 22px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+.trnd {
+  /* margin-top: -10px; */
+}
+.sgnout {
+  /* margin-top: -14px; */
+}
+.prd {
+  /* margin-top: -8px; */
+}
+.tri {
+  /* margin-top: -5px; */
+}
+#LoginLink {
+  color: rgb(128, 128, 128);
+  /* border: 1px solid red; */
+}
+#End {
+  position: absolute;
+  bottom: -2%;
+  left: 30%;
+}
+#Globe {
+  font-size: 30px;
+}
+
+.Expand {
+  background-color: var(--navColor);
+  display: none;
+  height: 100vh;
+  width: 254%;
+  position: absolute;
+  left: 0%;
+  top: -1%;
+  color: var(--fontColor1);
+  font-family: var(--fontFam1);
+  z-index: -1;
+  /* animation-name: expandSideBar;
+  animation-duration: 2s;
+  animation-fill-mode: both; */
+}
+/* .Display {
+  animation-name: collapseSideBar;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+ 
+}
+.expandedList {
+  font-size: 18px;
+} */
+@keyframes expandSideBar {
+  from {
+    transform: translateX(9px);
+  }
+  to {
+    transform: translateX(54px);
+  }
+}
+@keyframes collapseSideBar {
+  from {
+    transform: translateX(54px);
+  }
+  to {
+    transform: translateX(-4px);
+  }
+}
+
+/* 
+.Sidebar:hover .Expand {
+  display: block;
+  cursor: pointer;
+} */
+
+.Screen {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 10%;
+  height: 100vh;
+  width: 85%;
+  /* border: 2px solid wheat; */
+  z-index: -2;
+}
+
+.tableHeader {
+  color: white;
+  display: flex;
+}
+.tableContent {
+  margin: 4px;
+  /* border: 2px solid white; */
+  padding: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: #1e1e30;
+  color: gray;
+  font-size: 20px;
+  border-radius: 3px;
+}
+.tableContent:hover {
+  background-color: #161726;
+}
+.tableContentHead {
+  margin: auto;
+  position: relative;
+  top: 20%;
+  left: 8%;
+  height: 50px;
+  overflow-x: hidden;
+}
+#Confirmed,
+#Recovered {
+  left: 6%;
+}
+path {
+  /* fill: aliceblue; */
+  /* stroke: white; */
+  display: none;
+}
+
+.map {
+  position: absolute;
+  left: 2%;
+  top: 110vh;
+  fill: #161726;
+}
+.table-body {
+  display: flex;
+}
+.table-body-data {
+  top: 0%;
+  left: 0%;
+  font-size: 16px;
+}
+#tableScreen {
+  height: 75vh;
+  position: absolute;
+  top: 8%;
+}
+#contentInTable {
+  height: 75vh;
+  overflow: scroll;
+}
+.Charts {
+  position: absolute;
+  top: 10%;
+  left: 58%;
+  /* border: 2px solid white; */
+  height: 75vh;
+  overflow: scroll;
+  width: 40%;
+  /* border: 1px solid red; */
+}
+.chartBox {
+  margin-top: 20px;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); */
+  /* border: 1px solid red !important; */
+}
+.stateDisplay {
+  /* border: 2px solid white; */
+  height: 90vh;
+  width: 85vw;
+  position: relative;
+  top: 5%;
+}
+
+.stateInfoCard {
+  /* border: 2px solid white; */
+  height: fit-content;
+  width: 35vw;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.stateInfoCardHeader {
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: row;
+}
+.stateName {
+  width: 60%;
+  /* border: 2px solid white; */
+  font-size: 42px;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+.statePopulationNum {
+  text-align: right;
+  width: 60%;
+  /* border: 2px solid white; */
+
+  color: #9673b9;
+  font-family: "Poppins", sans-serif;
+}
+.pos {
+  font-size: 10px;
+}
+.infoCardBody {
+  height: 88%;
+  /* border: 1px solid white; */
+}
+
+.infocontent {
+  display: flex;
+  flex-direction: row;
+}
+.infocontent > div {
+  /* border: 2px solid white; */
+  height: 200px;
+  width: 40%;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.contentBody {
+  position: relative;
+}
+.title {
+  font-family: "Karantina", cursive;
+  font-weight: 100;
+  color: white;
+  /* border: 2px solid white; */
+  position: absolute;
+  font-size: 24px;
+  top: 30%;
+  left: 24%;
+}
+
+.number {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #f70c3a;
+}
+
+.graph {
+  position: absolute;
+  /* border: 1px solid red; */
+  top: 70%;
+}
+.posNum {
+  color: #9772b9;
+}
+#active {
+  color: #057bfe;
+}
+.recovered {
+  color: #27a844;
+}
+
+.TopDistrict {
+  /* border: 2px solid white; */
+  height: 40vh;
+  min-height: 200px;
+  width: 40vw;
+  position: absolute;
+  left: 53%;
+  top: 5%;
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
+.TopDistrictTitle {
+  color: whitesmoke;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  /* border: 2px solid white; */
+  width: 30%;
+  font-size: 22px;
+}
+
+.Content {
+  /* border: 2px solid white; */
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.ContentLeft {
+  /* border: 2px solid white; */
+  width: 35%;
+  height: 100%;
+}
+.ContentLeftContent {
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+  color: #fff;
+  margin-top: 22px;
+  position: relative;
+}
+.numberLeft {
+  width: 28%;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.place {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  position: absolute;
+  left: 50%;
+  top: 21%;
+}
+
+.Deceased {
+  left: 30%;
+}
+.districtDataChart {
+  width: 60%;
+  height: 100%;
+  /* border: 2px solid white; */
+}
+
+.CovidInfo {
+  /* border: 2px solid white; */
+  height: 53vh;
+  width: 45%;
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -70px;
+  /* border: 1px solid red; */
+}
+
+.CovidInfoBox {
+  /* padding: 20px; */
+  width: 220px;
+  height: 50%;
+  margin-left: 45px;
+  margin-bottom: 20px;
+  /* border: 2px solid white; */
+  border-radius: 10px;
+  color: #cc050a;
+  position: relative;
+  background-color: #331427 !important;
+  font-weight: bold;
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.6);
+}
+
+.CovidInfoBoxHeader {
+  /* border: 2px solid white; */
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=New+Tegomin&display=swap");
+
+.CovidInfoBoxNumber {
+  color: #aa1b33;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.CovidInfoBoxBody {
+  /* border: 2px solid white; */
+  position: absolute;
+  top: 49%;
+  left: 6%;
+  width: 90%;
+  font-family: "Poppins", sans-serif;
+  color: #e23028;
+  font-weight: bold;
+}
+.box2 {
+  background-color: #151d33 !important;
+  color: #0e419a !important;
+}
+.box3 {
+  background-color: #182829 !important;
+  color: #227439;
+}
+.box4 {
+  background-color: #230f41 !important;
+  color: #775899 !important;
+}
+
+.box2Num {
+  color: #0b71ea !important;
+}
+.box3Num {
+  color: #27a844 !important;
+}
+
+.box2Body {
+  color: #0b71ea !important;
+}
+.box3Body {
+  color: #28a745 !important;
+}
+.box3Title {
+  width: 100%;
+}
+.CovidInfoBoxTitle {
+  font-weight: 900;
+}
+.box4Title,
+#magicbox4 {
+  color: #775899;
+}
+
+.chartStateDisplay {
+  /* border: 2px solid white; */
+  height: 300px;
+  padding: 20px;
+  width: 40%;
+  position: absolute;
+  top: 42%;
+  right: 1%;
+  overflow: scroll;
+  margin-top: 100px;
+  border-radius: 20px;
+  /* border: 1px solid red; */
+  /* padding: 70px; */
+  /* box-shadow: 2px 2px 4px rgba(0,0,0,0.6); */
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.6);
+}
+
+.headerSearch {
+  width: 600px;
+  /* border: 2px solid white; */
+  position: relative;
+  height: 35px;
+  left: 20%;
+  top: 40%;
+}
+
+.Search input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid white;
+  /* background-color: #171e32; */
+  /* background-color: inherit; */
+}
+
+.DashboardBodyBox {
+  /* border: 2px solid white; */
+  position: relative;
+  top: 23%;
+  width: 42vw;
+  height: 90vh;
+  /* background-color: #171e32; */
+  border-radius: 20px;
+}
+
+.DashboardHeader {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  height: 100px;
+  /* border: 2px solid white; */
+}
+
+.DashboardLocation {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  /* border: 2px solid white; */
+  height: 40%;
+}
+
+.tabs {
+  /* border: 2px solid white; */
+  position: relative;
+  top: 40px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  /* color: pink; */
+  color: white;
+}
+.tab {
+  /* margin-right: 30px; */
+  font-size: 24px;
+  padding: 10px;
+  width: 30%;
+  border-bottom: 2px solid white;
+  text-align: center;
+  position: relative;
+}
+.left {
+  /* border-bottom-left-radius: 8px; */
+  left: -2px;
+}
+.right {
+  left: 2px;
+}
+.tab:hover {
+  cursor: pointer;
+}
+
+.active1 {
+  border: 4px solid white;
+  height: 26px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 0px;
+  color: #4081a7;
+}
+
+.DashboardBody {
+  color: white;
+  /* border: 4px solid white; */
+  height: 90%;
+  width: 99%;
+  position: absolute;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  border-top: 0px;
+}
+
+.DashboardBodyHeader {
+  position: relative;
+  top: 4%;
+  left: 2%;
+  /* border: 4px solid white; */
+  height: 40px;
+
+  width: 94%;
+}
+.DashboardBodyRenderPart {
+  position: relative;
+  color: white;
+  /* border: 4px solid white; */
+  height: 90%;
+  width: 94%;
+  left: 2%;
+  position: absolute;
+  top: 10%;
+  overflow-y: scroll;
+  margin-top: 15px;
+  /* border-top: 0px; */
+}
+
+.tweetBox {
+  /* border: 2px solid white; */
+  height: fit-content;
+  /* width: fit-content; */
+  width: 97%;
+  overflow-wrap: break-word;
+  margin-top: 30px;
+  /* border-radius: 20px; */
+  /* background-color: #341a27 !important; */
+  background-color: #02121f !important;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.TweetBoxHeader {
+  /* border: 2px solid white; */
+  height: 20%;
+  padding: 10px;
+  /* box-sizing: border-box; */
+  font-size: 20px !important;
+  color: #057bfe;
+}
+.TweetBoxBody {
+  /* border: 2px solid white; */
+  /* height: 20%; */
+  height: 50%;
+  padding: 10px;
+}
+.hashTags {
+  color: #0e419a;
+  height: fit-content;
+  font-size: 15px;
+  width: 100%;
+  /* border: 2px solid white; */
+}
+.tag {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+.footerHos {
+  /* border: 2px solid white; */
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: #4081a7;
+  top: 40%;
+  justify-content: space-between;
+}
+.phone {
+  color: whitesmoke;
+  margin-right: 13px;
+}
+
+.Search {
+  /* border: 2px solid white; */
+  height: 40px;
+  width: 100%;
+}
+
+.sBox {
+  color: white;
+  height: 100%;
+  width: 250px;
+  /* border: 2px solid white; */
+}
+select:focus {
+  outline: none !important;
+}
+.sBox .form select {
+  background-color: #1f2a37;
+  color: white;
+  height: 40px;
+  border: 0px;
+  border-radius: 10px;
+  font-size: 24px;
+  padding-left: 10px;
+  width: 250px;
+}
+
+/* LOGin COde */
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+.outer-wrapper {
+  margin: auto;
+  margin: 20px;
+  padding: 20px;
+  /* border: 2px solid red; */
+  width: 20vw;
+
+  min-width: 300px;
+  height: fit-content;
+  border-radius: 20px;
+  background: inherit;
+  /* box-shadow: 11px 11px 20px #0a0a0e, -11px -11px 20px #0d0b0b; */
+}
+.form-head {
+  /* margin: 10px; */
+  /* padding: 10px; */
+  text-align: center;
+  font-size: 30px;
+  color: #4081a7;
+  font-family: "poppins";
+  font-weight: 900;
+}
+.form-inp {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.eml {
+  height: 10px;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: inherit;
+  /* box-shadow: inset 5px 5px 7px #06060e, inset -5px -5px 7px #000000; */
+  padding: 20px;
+  color: white;
+  border: 2px solid black;
+  margin-top: 3px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none !important;
+}
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins";
+}
+button:hover {
+  border: 2px solid #0e419a;
+}
+button {
+  margin: 10px 0px;
+  background: inherit;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 100px;
+  border: 2px solid white;
+  /* box-shadow: 9px 9px 17px #161726, -9px -9px 17px #ffffff; */
+  color: whitesmoke;
+  font-size: 16px;
+  transition: 0.5s all ease-in-out;
+}
+button:focus {
+  outline: none !important;
+}
+.active {
+  background: inherit;
+  box-shadow: inset 9px 9px 18px #171e32, inset -9px -9px 18px #ffffff;
+  color: indigo;
+}
+.login-redirect {
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+.submit-btn1:hover {
+  cursor: pointer;
+}
+a,
+a:focus,
+a:visited,
+a:hover {
+  color: rgb(15, 14, 14);
+  outline: none !important;
+  text-decoration: none;
+}
+::placeholder {
+  caret-color: indigo;
+}
+/* Media Queries */
+@media (max-width: 1024px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    font-size: 16px;
+  }
+}
+
+.error {
+  color: white;
+  text-align: center;
+}
+
+.radioSignUp {
+  color: whitesmoke;
+  /* font-family: "poppins"; */
+  margin-right: 20px;
+}
+
+.SignUPlink {
+  color: #4081a7;
+  position: relative;
+  left: 26%;
+  /* transform: translate(-50%); */
+  /* margin: 0px 0px 20px 0px; */
+}
+.SignInlink {
+  color: #4081a7;
+  position: relative;
+  left: 34%;
+}
+
+@media only screen and (max-width: 1000px) {
+  /*Small smartphones [325px -> 425px]*/
+  .DashboardBodyBox {
+    width: 52vw;
+  }
+  .hashTags {
+    word-break: break-all;
+  }
+  .TweetBoxBody {
+    padding: 20px;
+  }
+  .Sidebar {
+    background-color: var(--navColor) !important;
+    height: 100vh;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .DashboardBodyBox {
+    width: 60vw;
+  }
+  .Screen {
+    left: 5%;
+  }
+  .DashboardBody {
+    width: 119%;
+  }
+  .tabs {
+    width: 150%;
+  }
+  .container {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Screen {
+    left: -6%;
+  }
+  .DashboardBody {
+    width: 150%;
+  }
+  .container {
+    position: absolute;
+    left: 72%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.posHead {
+  color: whitesmoke;
+  position: relative;
+  top: 6%;
+  left: 5%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Poppins:wght@200&display=swap");
+#AboutUsBox {
+  /* border: 2px solid white; */
+  height: 760px;
+  position: relative;
+  left: 20%;
+  top: 5%;
+  width: 50%;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.ques {
+  color: #057bfe;
+}
+/* //this is storage */
+.deadman {
+  /* border: 1px solid red !important; */
+  position: relative;
+  left: 10%;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+#vaccine {
+  color: #808080 !important;
+}

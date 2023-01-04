@@ -1,0 +1,11 @@
+.description {
+  text-align: justify;
+  display: block;
+  margin: 50px 0;
+  padding: 0 50px;
+}
+
+.description ul {
+  display: flex;
+  list-style: none;
+}

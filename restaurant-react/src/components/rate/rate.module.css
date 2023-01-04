@@ -1,0 +1,14 @@
+i {
+  font-size: 2rem;
+  display: inline-block;
+  margin: 5px;
+}
+
+.red {
+  color: red;
+  display: inline-block;
+}
+
+.white {
+  display: inline-block;
+}

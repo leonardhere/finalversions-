@@ -1,0 +1,11 @@
+.contacts {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+h2, h3 {
+  font-family: 'Architects Daughter', cursive;
+}
