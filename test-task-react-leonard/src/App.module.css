@@ -1,0 +1,19 @@
+.app {
+  width: 900px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+
+@media (max-width: 900px) {
+  .app{
+    width: max-content;
+  }
+}
+@media (max-width: 450px) {
+  .app{
+
+    width: 100vw;
+  }
+}
+

@@ -1,0 +1,23 @@
+body {
+
+  background: #F4F4F5;
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+@media (max-width: 450px) {
+  body{
+    padding-top: 0;
+    background: white;
+
+  }
+}
+
+
+

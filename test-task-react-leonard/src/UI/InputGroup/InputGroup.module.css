@@ -1,0 +1,26 @@
+.custom_input input{
+    margin-top: 8px;
+    background: white;
+    height: 44px;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    outline: none;
+    font-family: SB Sans Interface;
+    font-size: 14px;
+    padding: 0 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+
+}
+.custom_input img{
+    margin-top: 8px;
+    margin-left: 18.5px;
+    cursor: pointer;
+}
+.custom_input{
+    display: flex;
+    align-items: center;
+}
+

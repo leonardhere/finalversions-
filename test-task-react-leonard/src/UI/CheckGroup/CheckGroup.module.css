@@ -1,0 +1,27 @@
+.check_body{
+    display: flex;
+    flex-direction: column;
+}
+
+.custom_checkbox_wrapper{
+    display: flex;
+}
+
+.custom_checkbox{
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+}
+
+.custom_checkbox_active{
+    margin-right: 10px;
+    background: #5558FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}

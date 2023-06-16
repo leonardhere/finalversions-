@@ -1,0 +1,35 @@
+.input_label{
+    margin-top: 24px;
+}
+
+.label_text{
+    font-family: "SB Sans Interface";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.input_label input{
+    background: white;
+    height: 44px;
+    width: 400px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    transition: border-color 0.3s;
+    outline: none;
+    padding:0 12px;
+}
+
+
+.input_label input:focus{
+    border: 1px solid rgba(85, 88, 250, 1);
+}
+@media (max-width: 450px) {
+
+    .input_label input{
+        width: 100%;
+    }
+}

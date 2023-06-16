@@ -1,0 +1,37 @@
+.custom_area textarea{
+    padding: 12px;
+    margin-top: 8px;
+    height: 84px;
+    width: 680px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    outline: none;
+    position: relative;
+}
+
+.counter{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.area_wrapper{
+    position: relative;
+}
+
+@media (max-width: 450px) {
+
+    .custom_area textarea{
+       width: 100%;
+
+    }
+
+}
+@media (max-width: 680px) {
+
+    .custom_area textarea{
+        width: 100%;
+
+    }
+
+}

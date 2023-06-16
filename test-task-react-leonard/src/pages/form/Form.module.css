@@ -1,0 +1,43 @@
+.progress_bar_wrapper{
+ margin: 0 0 66px 0;
+    padding: 0 110px;
+}
+
+.form{
+    padding-top: 62px;
+    padding-bottom: 80px;
+}
+.tab_wrapper{
+    margin-left: 110px;
+    margin-right: 98px;
+}
+
+@media (max-width: 450px) {
+
+    .progress_bar_wrapper{
+        padding: 0 24px;
+        margin: 0;
+
+    }
+    .form{
+        padding-top: 62px;
+        padding-bottom: 0px;
+    }
+    .tab_wrapper{
+        padding: 24px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media (max-width: 680px) {
+
+
+    .tab_wrapper{
+        padding: 24px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+}
+

@@ -1,0 +1,133 @@
+@import url(http://db.onlinewebfonts.com/c/37086b994764dba84b2ee0f1083bfeed?family=SB+Sans+Interface);
+@import url(http://db.onlinewebfonts.com/c/6caf346ed2d9f7e73b5e724c409b135f?family=Mono);
+.main{
+  padding: 0 24px 291px 24px;
+}
+
+.header{
+  height: 129px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.author_photo{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(213, 228, 247, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SB Sans Text Mono", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.author_name{
+  font-family: "SB Sans Interface", serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  display: flex;
+
+}
+
+.contact_style{
+  display: flex;
+  align-items: flex-start;
+  font-family: SB Sans Interface, serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 17.6px;
+  color: rgba(85, 88, 250, 1);
+  cursor: pointer;
+
+}
+.contact_style img{
+margin-right: 5.6px;
+
+}
+.author_info{
+  margin-left: 24px;
+}
+.author_contact{
+  margin-top: 8px;
+  margin-left: -17.6px;
+  display: flex;
+
+}
+
+.contact_style a{
+  text-decoration: none;
+}
+
+@media (max-width: 450px) {
+  .main{
+    padding: 0 24px 0 24px;
+  }
+  .author_photo{
+    display: inline-flex;
+  }
+  .author_info{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .author_name{
+
+    font-size: 12px;
+    justify-content: flex-start;
+    display: flex;
+  }
+  .author_contact_pc{
+    display: none;
+  }
+  .author_contact_mobile{
+    width: 100%;
+    display: flex;
+  }
+}
+@media(min-width:451px){
+  .author_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .author_name{
+    justify-content: flex-end;
+    flex-direction: row;
+    display: flex;
+  }
+  .author_contact_pc{
+    display: flex;
+  }
+  .author_contact_mobile{
+
+    display: none;
+  }
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #A6A6A6;
+}
+
+
+
+
+
+
+

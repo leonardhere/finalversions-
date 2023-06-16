@@ -1,0 +1,17 @@
+/*tab1*/
+.tab1 input{
+    width: 300px;
+}
+
+.button_group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+@media (max-width: 450px) {
+    .tab1 input{
+        width: 100%;
+    }
+
+}
